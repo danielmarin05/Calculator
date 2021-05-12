@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src = "./calculator.js"></script>
+    <title>Document</title>
+</head>
+<body onload="init();" style="background-color: darkolivegreen;">
+    <section class="section-ppal">
+        <div class="calculator-div">
+            
+                <div class="pantalla">
+                    <span id= "resultado"></span>
+                </div>
+            
+                <div class="section-button">
+
+                    <div class="buttons-row">
+                        <button class="button" id="n7" onclick="numero(7)">7</button>
+                        <button class="button" id= "n8" onclick="numero(8)">8</button>
+                        <button class="button" id= "n9" onclick="numero(9)">9</button>
+                        <button class="button" id= "div" onclick="operacion('/')">/</button>
+                    </div>
+
+                    <div class="buttons-row">
+                        <button class="button" id= "n4" onclick="numero(4)">4</button>
+                        <button class="button" id= "n5" onclick="numero(5)">5</button>
+                        <button class="button" id= "n6" onclick="numero(6)">6</button>
+                        <button class="button" id= "nmulti" onclick="operacion('*')">*</button>
+                    </div>
+
+                    <div class="buttons-row">
+                        <button class="button" id= "n1" onclick="numero(1)">1</button>
+                        <button class="button" id= "n2" onclick="numero(2)">2</button>
+                        <button class="button" id= "n3" onclick="numero(3)">3</button>
+                        <button class="button" id= "resta" onclick="operacion('-')">-</button>
+                    </div>
+
+                    <div class="buttons-row">
+                        <button class="button" id= "n0" onclick="numero(0)">0</button>
+                        <button class="buttonClean" id= "clean" onclick="operacion('c')">C</button>
+                        <button class="buttonResult" id= "result" onclick="operacion('=')">=</button>
+                        <button class="button" id= "suma" onclick="operacion('+')">+</button>
+                    </div>
+                    
+                </div>
+
+                
+                    
+                
+
+        </div>
+    </section>
+</body>
+</html>
