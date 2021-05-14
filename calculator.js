@@ -12,6 +12,7 @@ function operacion (signo){
     console.log(signo);
         operador = signo;
         auxiliar = pantalla.innerText;
+        pantalla.innerText = '';
         operar();
         pantalla.innerText = '';
 }
@@ -37,11 +38,16 @@ function operar (){
             console.log(total);
             break;
         case '/':
+            
             console.log(pantalla.innerText);
-            total = parseFloat(auxiliar) / parseFloat(pantalla.innerText);
-            pantalla.innerText = total.toString();
-            console.log(total);
-            break;
+            if (pantalla.innerText === '0'){
+                alert('No es posible dividir por cero');
+            }else{
+                    total = parseFloat(auxiliar) / parseFloat(pantalla.innerText);
+                    pantalla.innerText = total.toString();
+                    console.log(total);
+                    break;
+                }
 
             case 'c':
                 pantalla.innerText = '';
